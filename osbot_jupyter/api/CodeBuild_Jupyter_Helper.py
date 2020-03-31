@@ -15,7 +15,7 @@ class CodeBuild_Jupyter_Helper:
         self.code_build    = CodeBuild(project_name=self.project_name,role_name=None)
         self.max_builds    = 10
         self.build_timeout = 180
-        self.server_sizes  = {'small': 'BUILD_GENERAL1_SMALL', 'medium': 'BUILD_GENERAL1_MEDIUM','large': 'BUILD_GENERAL1_LARGE'}
+        self.server_sizes  = {'small': 'BUILD_GENERAL1_SMALL', 'medium': 'BUILD_GENERAL1_MEDIUM'}
 
     def get_active_build_id(self):
         builds = self.get_active_builds(stop_when_match=True)
