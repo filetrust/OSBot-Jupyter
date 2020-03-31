@@ -58,4 +58,4 @@ class test_CodeBuild_Jupyter_Helper(Test_Helper):
 
     def test_gw_repo_start_build_for_repo__server_size(self):
         repo_name = 'gwbot-jupyter-notebooks'
-        self.result = self.api.start_build_for_repo(repo_name, server_size = 'large' )
+        self.result = self.api.start_build_for_repo(repo_name, server_size = 'medium' )
