@@ -14,7 +14,7 @@ class CodeBuild_Jupyter_Helper:
         self.project_name  = 'OSBot-Jupyter'
         self.code_build    = CodeBuild(project_name=self.project_name,role_name=None)
         self.max_builds    = 10
-        self.build_timeout = 240
+        self.build_timeout = 180
         self.server_sizes  = {'small': 'BUILD_GENERAL1_SMALL', 'medium': 'BUILD_GENERAL1_MEDIUM','large': 'BUILD_GENERAL1_LARGE'}
 
     def get_active_build_id(self):
