@@ -22,7 +22,7 @@ class test_OSBot_Jupyter_Create_Code_Build(Test_Helper):
         self.build_spec      = 'buildspec.yml'
         self.docker_type     = 'LINUX_CONTAINER'
         #self.docker_image    = '{0}.dkr.ecr.eu-west-1.amazonaws.com/osbot-jupyter:latest'.format(self.account_id),
-        self.compute_type    = 'BUILD_GENERAL1_LARGE'
+        self.compute_type    = 'BUILD_GENERAL1_MEDIUM'
         #self.api             = Create_Code_Build(project_name=self.project_name)
         self.api             = Create_Code_Build(project_name  =self.project_name  , github_org  =self.github_org  ,
                                                  source_version=self.source_version,
